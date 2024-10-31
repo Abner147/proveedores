@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.10" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+</Project>
+public class Proveedor
+{
+    public int IdProveedor { get; set; }
+    public string Nit { get; set; }
+    public string Proveedor { get; set; }
+    public string Direccion { get; set; }
+    public string RazonSocial { get; set; }
+    public DateTime FechaCreacion { get; set; }
+}
